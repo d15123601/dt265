@@ -30,11 +30,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   /*position: relative;*/ 
-  /* removed */
+  /* changed */
   width: 100%;
-  /*  max-width: 960px; removed */
+  /*  max-width: 960px; changed */
   margin: 0 auto;
-  padding: 0 /*20px removed*/;
+  padding: 0 /*20px changed*/;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -126,7 +126,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   color: #222; }
-/*  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; removed*/
+/*  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; changed*/
 
 
 /* Typography
@@ -160,7 +160,7 @@ p {
 /*a {		
   color: #1EAEDB; }		
 a:hover {		
-  color: #0FA0CE; } removed */
+  color: #0FA0CE; } changed */
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
