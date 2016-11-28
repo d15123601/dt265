@@ -1,0 +1,244 @@
+/*
+* micksstyle
+* Copyright 2016, Mick O Donnell
+* 
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- html elements
+- links
+- classes
+- ids
+
+/* html elements
+-----------------------------------
+*/
+body {
+  margin: 0px;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Century Gothic", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #061D2C;
+  height: 100%;
+}
+header h1 {
+        font-size: 5rem; 
+        background: #1A6394;
+        color: #e6a522;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+@media (min-width: 500px)  {    
+    header h1 {
+        font-size: 8rem; 
+        background: #1A6394;
+        color: #e6a522;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    header p {
+        font-size: 2rem;
+        background: #1A6394;
+        color: #e6a522;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+}
+@media (min-width: 800px)  {    
+    header h1 {
+        font-size: 10rem; 
+        background: #1A6394;
+        color: #e6a522;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header p {
+        font-size: 2rem;
+        background: #1A6394;
+        color: #e6a522;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+}    
+}
+
+@media (max-width: 499px){
+    header p {
+        visibility: hidden;
+        height: 0;
+    }
+}
+main {
+    background: #d4e8f4;
+}
+
+main p{
+    padding-top: .5%;
+    padding-left: .5%;
+    padding-right: .5%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+main>.row {
+    border-bottom: #061d2c solid 0.5px;
+}
+main h4 {
+    text-align: left;
+}
+
+main .row {
+    margin-top: 0px;
+    border-bottom: solid 0.5px #061d2c;
+}
+
+iframe {
+    margin-left: 5%;
+}
+/* theming for article links
+-----------------------------------
+*/
+.tools {
+    border-left: #5BE00D solid 4px;
+}
+.examples {
+    border-left:  #2D22B5 solid 4px;
+}
+.process {
+    border-left:  #EB0D41 solid 4px;
+}
+.review {
+    border-left:  #FFC80E solid 4px;
+}
+.resources {
+    border-left:  #4F090E solid 4px;
+}
+/* links
+-----------------------------------
+*/
+a {
+  background-color: transparent;
+  text-decoration: none;
+  }
+  
+a:active {
+  }
+  
+a:hover {
+  }
+  
+a:visited {
+  }
+
+/* This section has the styles to highlight the current page;
+   taken from http://www.apaddedcell.com/highlight-links-current-page-css
+-----------------------------------
+*/
+body.indexpage a.indexpage {
+    background: #30617f;
+    text-decoration: underline;
+}
+body.interactpage a.interactpage {
+    background: #30617f;
+    text-decoration: underline;
+}
+body.resourcespage a.resourcespage {
+    background: #30617f;
+    text-decoration: underline;
+}
+body.processpage a.processpage {
+    background: #30617f;
+    text-decoration: underline;
+}
+body.inspirationpage a.inspirationpage {
+    background: #30617f;
+    text-decoration: underline;
+}
+body.backgroundpage a.backgroundpage {
+    background: #30617f;
+    text-decoration: underline;
+}
+
+/* classes
+-----------------------------------
+*/
+.banner {
+    background: #1A6394;
+}
+
+.bg_aside {
+    margin-top: 5%;
+}
+.form {
+    border: #061D2C solid 1px;
+    border-radius: 5px;
+    margin: 5%;
+    background: #8ed8ed;
+}
+.quicklinks {
+    background: #1A6394;
+    text-align: center;
+}
+.headlink {
+    color: #FFC80E;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.sublink {
+    color: #FFC80E;
+    font-size: 1.5rem;
+    text-align: center;   
+}
+.toplink {
+    background: #061d2c;
+    text-align: center;
+    }
+    a.toplink {
+        color: #E6A522;
+    }
+    a.toplink:hover {
+        color: #8ed8ed;
+    }
+
+.navbar {
+    font-size: 1.8rem;
+    background: #061d2c;
+    height: auto;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+}
+.intro>.row {
+    text-align: center;
+    padding-top: 2.5%;
+    border-bottom: solid #061D2C;
+}
+.content{
+    }    
+/* ids
+-----------------------------------
+*/
+#process_main>section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#process_map {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#data_sci_explainer {
+    text-align: left;
+    border-bottom: #061D2C solid 2px;
+}

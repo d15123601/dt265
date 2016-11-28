@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Geo_Data_Sci</title>
+        <meta charset="UTF-8">        
+        <link rel ="stylesheet" href ="css/skeleton.css">
+        <link rel="stylesheet" href ="css/mystyles.css">
+    </head>
+    <body class = "interactpage">
+        <div class="container">
+            <header class = "u-full-width">
+                    <h1 id = "top_header">geo_data_science</h1>
+                    <p>A resource for all things data and spatial
+                    </p>
+            </header>
+            <nav class="navbar row">
+                <a href="index.html" class ="two columns toplink indexpage">main</a>
+                <a href="background.html" class ="two columns toplink backgroundpage">background</a>
+                <a href="process.html" class ="two columns toplink processpage">process</a>
+                <a href="resources.html" class ="two columns toplink resourcespage">resources</a>
+                <a href="inspiration.html" class ="two columns toplink inspirationpage">inspiration</a>
+                <a href="interact.html" class ="two columns toplink interactpage">interact</a>
+            </nav>
+            <div class = "row indexpage form"  style="height: 600px">
+                <h3> Get in touch </h3>
+                <p> First Name </p>
+                <input type="text" id= "f_name" value="" size="60" />
+                <p> Last Name </p>
+                <input type="text" id= "l_name" value="" size="60" />
+                <p> Email </p>
+                <input type="text" id= "email" value="" size="60" />
+                <p> Your Interests </p>
+                <select id= "interest_opt" multiple="multiple" size="60">
+                    <option>Python</option>
+                    <option>R</option>
+                    <option>GIS Applications</option>
+                    <option>Data Science</option>
+                    <option>Visualisation</option>
+                    <option>Data Quality</option>
+                </select>
+                <input type="submit" value="Submit" name="enter_email"
+                       onclick = "confirm()"/>
+            </div>
+            <footer class = "container quicklinks">
+<!--            Insert the top level links in this row-->
+            <div class="row q_nav">
+                <p class = "two columns">
+                    <a class = "headlink" href="index.html">main</a><br>
+                    <a class = "sublink" href="index.html">contact</a><br>
+                    <a class = "sublink" href="index.html">about</a><br>
+                    <a class = "sublink" href="index.html">case studies</a>
+                </p>
+                <p class = "two columns">
+                    <a class = "headlink" href="background.html">background</a><br>
+                    <a class = "sublink" href="index.html">data science</a><br>
+                    <a class = "sublink" href="index.html">geospatial analysis</a><br>
+                    <a class = "sublink" href="index.html">geostatistics</a><br>
+                    <a class = "sublink" href="index.html">network analysis</a>
+                </p>
+                <p class = "two columns">
+                    <a class = "headlink" href="process.html">process</a><br>
+                    <a class = "sublink" href="index.html">sourcing</a><br>
+                    <a class = "sublink" href="index.html">cleaning</a><br>
+                    <a class = "sublink" href="index.html">piping</a><br>
+                    <a class = "sublink" href="index.html">validating</a>
+                </p>
+                <p class = "two columns">
+                    <a class = "headlink" href="resources.html">resources</a><br>
+                    <a class = "sublink" href="index.html">Python</a><br>
+                    <a class = "sublink" href="index.html">R</a><br>
+                    <a class = "sublink" href="index.html">GIS</a><br>
+                    <a class = "sublink" href="index.html">Leaflet</a>
+                </p>
+                <p class = "two columns">
+                    <a class = "headlink" href="inspiration.html">inspiration</a><br>
+                    <a class = "sublink" href="index.html">data viz</a><br>
+                    <a class = "sublink" href="index.html">use cases</a><br>
+                    <a class = "sublink" href="index.html">novel</a><br>
+                    <a class = "sublink" href="index.html">cartography</a>
+                </p>
+                <p class = "two columns">
+                    <a class = "headlink" href="interact.html">interact</a><br>
+                    <a class = "sublink" href="index.html">a - e</a><br>
+                    <a class = "sublink" href="index.html">f - j</a><br>
+                    <a class = "sublink" href="index.html">k - p</a><br>
+                    <a class = "sublink" href="index.html">q - z</a>
+                </p>              
+            </div>            
+        </footer>
+        </div>
+        <script>
+            function confirm() {
+                var fname = document.getElementById("f_name").value;
+                var lname = document.getElementById("l_name").value;
+                var email = document.getElementById("email").value;
+                var interests = document.getElementById("interest_opt").value;
+                var str_interests = interests.toString();                
+                window.alert(fname + ',thank you for subscribing. We will get back to you about ' + str_interests);
+            }
+        </script>
+        <script src = "js/myjs.js">
+        </script>
+    </body>
+</html>
